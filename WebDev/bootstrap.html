@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            border: 3px solid #f1f1f1;
+        }
+        .container{
+            text-align: center;
+        }
+        input[type=text],input[type=password]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button{
+            background-color: #07beb8;
+            color: white;
+            padding: 14px 20px;
+            font-size: 24px;
+            width: 50%;
+            cursor: pointer;
+            margin: 8px 0;
+            border: none;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        .btn{
+            width: auto;
+            padding: 10px 18px;
+            background-color: #e63946;
+        }
+        .imgcontainer{
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        img.avatar{
+            width: 20%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Login Form</h2>
+
+    <form>
+        <div class="imgcontainer">
+            <img src="Images/login.png" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" class="form-control" id="name">
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" class="form-control" id="pwd">
+            
+            <button type="submit">Submit <i class="material-icons">search</i></button><br>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="btn btn-default">Cancel</button><br>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+    </form>
+</body>
+</html>

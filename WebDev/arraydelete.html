@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Element Deletion</title>
+    <style>
+        button {
+            background-color: #a2d2ff;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        p{
+            color: #a01a58;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>Class List</h1>
+    <p id="ele"></p>
+    <button onclick="del()">Delete an Element</button>
+    <p id="del"></p>
+
+    <script>
+        const data = [
+            {
+                StudentName: "Harish",
+                StudentUID: 200,
+                StudentAge: 22 
+            },
+            {
+                StudentName: "John",
+                StudentUID: 201,
+            },
+            {
+                StudentName: "Kirti",
+                StudentUID: 202,
+            },
+            {
+                StudentName: "Leon",
+                StudentUID: 203,
+            }
+        ]
+        document.getElementById("ele").innerHTML = JSON.stringify(data,null,5)
+        function del(){
+            delete data[0].StudentAge;
+            document.getElementById("del").innerHTML = JSON.stringify(data);
+        }
+    </script>
+    </center>
+</body>
+</html>
