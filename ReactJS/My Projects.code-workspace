@@ -6,7 +6,13 @@
 		{
 			"name": "hello-node.js",
 			"path": "../hello-node.js"
+		},
+		{
+			"name": "DO101-apps",
+			"path": "../../demo/DO101-apps"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Documents"
+	}
 }
